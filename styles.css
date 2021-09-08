@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: LemonMilk;
-    src: url(fonts/LEMONMILK-Regular.otf);
+    src: url(assets/LEMONMILK-Regular.otf);
 }
 /* general things */
 * {
@@ -71,7 +71,7 @@ a {
 }
 /* content */
 #welcome-section {
-    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.8)), url(img/wallpaper/road_mountain.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.8)), url(assets/road_mountain.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -185,7 +185,7 @@ button:hover {
 #contact {
     height: auto;
     padding: 5rem 0;
-    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,1)), url(img/wallpaper/snow_mountain.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,1)), url(assets/snow_mountain.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
