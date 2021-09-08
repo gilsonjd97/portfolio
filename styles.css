@@ -149,6 +149,7 @@ button {
     font-family: LemonMilk;
     position: relative;
     cursor: pointer;
+    border: 1px solid white;
 }
 button:hover {
     color: white;
