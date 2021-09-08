@@ -1,0 +1,277 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand&family=Noto+Sans&family=Poppins&family=Roboto&display=swap');
+
+@font-face {
+    font-family: LemonMilk;
+    src: url(fonts/LEMONMILK-Regular.otf);
+}
+/* general things */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+} 
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: #111;
+    color: white;
+}
+section {
+    height: auto;
+    padding: 1rem clamp(1rem, 5vw, 10rem);  
+}
+p {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+a {
+    color: white;
+}
+/* navbar */ 
+.myNavbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0px 1rem;
+    background-color: rgba(0,0,0,.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1; 
+}
+.myNavbar .links {
+    display: none;
+    color: white;
+}
+.myNavbar a.logo img {
+    width: 70px;
+    position: absolute;
+    top: 12px;
+}
+.myNavbar a.icon {
+    color: white;
+    position: absolute;
+    top: 12px;
+    right: 1rem;
+}
+.myNavbar.responsive {
+    display: block;
+    height: auto;
+    padding-bottom: 5px;
+}
+.myNavbar.responsive .links {
+    display: block;
+    margin: 10px 0;
+}
+.myNavbar.responsive a:first-child {
+    margin-top: 3.5rem;
+}
+/* content */
+#welcome-section {
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.8)), url(img/wallpaper/road_mountain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#welcome-section .profile {
+    width: 15rem;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+}
+#welcome-section h1 {
+    font-family: LemonMilk;
+    font-size: clamp(1.6rem, 5vw, 3rem); 
+}
+#welcome-section p {
+    margin: 2rem 1.5rem;
+}
+.social img {
+    width: 2rem;
+    margin: 0 10px;
+    margin-bottom: 2rem;
+}
+.scrolldown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+}  
+.arrows {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.arrowdown {
+	margin-top: -6px;
+	position: relative;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	transform: rotate(45deg);
+  }
+.arrowdown:nth-child(odd) {
+	animation: pulse 500ms ease infinite alternate;
+}
+.arrowdown:nth-child(even) {
+	animation: pulse 500ms ease infinite alternate 250ms;
+}
+.box h1 {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+.box p {
+    margin: 1rem 0;
+}
+.box .title {
+    border-bottom: 1px solid white;
+    margin: 0rem 1rem;
+}
+.box .number {
+    background-color: dodgerblue;
+    padding: 0 .5rem;
+}
+button {
+    margin-top: 1rem;
+    padding: 10px 10px;
+    font-family: LemonMilk;
+    position: relative;
+    cursor: pointer;
+}
+button:hover {
+    color: white;
+    background-color: cornflowerblue;
+}
+#about button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    border: 1px solid white;
+    z-index: -1;
+}
+#process {
+ text-align: right;
+}
+#process p span {
+    background-color: indigo;
+}
+#work {
+    padding-bottom: 3rem;
+}
+#work .flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#work .picture img {
+    width: 100%;
+    border: 1px solid white;
+    margin: 5px 0;
+}
+#contact {
+    height: auto;
+    padding: 5rem 0;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,1)), url(img/wallpaper/snow_mountain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 100px;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+}
+.contact-picture img {
+    width: 10rem;
+}
+.contact-text h1 {
+    font-family: LemonMilk;
+    font-size: clamp(2rem, 5vw, 3rem);
+    padding: 0 1rem;
+}
+.contact-text h1 span {
+    font-size: clamp(1rem, 4.5vw, 2rem);
+    border-bottom: 1px solid white;
+}
+#contact button {
+    margin: 1rem 0 3rem 0;
+}
+.copy {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #777;
+}
+/* media queries */
+@media  screen and (min-width: 992px) {
+    #work .flex {
+        margin-top: 3rem;
+        flex-direction: row;
+    }
+    #work .picture img {
+        width: 80%;
+    }
+    .social img {
+        width: 3rem;
+    }
+}
+@media screen and (min-width:1200px) {
+    .myNavbar a.icon {
+        display: none;
+    }
+    .myNavbar .links {
+        display: block;
+        font-size: 1.5rem;
+    }
+    .myNavbar .links:hover {
+        border-bottom: 1px solid white;
+    }
+    .myNavbar a.logo img {
+        position: relative;
+        width: 90px;
+        top: 2px;
+    }
+    .myNavbar {
+        gap: 20px;
+        justify-content: center;
+    }
+    #welcome-section  {
+        height: 100vh;
+    }
+    .scrolldown {
+        position: absolute;
+    }
+    .social {
+        margin-top: 4rem;
+    }
+    #contact {
+        padding: 10rem 0;
+    }
+    .social img:hover {
+        border-radius: 50%;
+        background-color: cornflowerblue;
+        cursor: pointer;
+    }
+}
+/* animation */
+@keyframes pulse {
+    from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 0.5;
+	}
+}

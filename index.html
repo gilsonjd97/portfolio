@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+   <head>
+       <title>GDR Design | Portfolio</title>
+       <!-- Settings and info-->
+       <meta charset="UTF-8">
+       <meta name="description" content="Web Design">
+       <meta name="keywords" content="Portfolio, Web Designer, Web Developer">
+       <meta name="author" content="GDR. Design">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- Links to external files -->
+       <link rel="stylesheet" href="styles.css">
+       <script src="motion.js"></script>
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+   </head> 
+   <body onload="type()">
+      <nav id="navbar" class="myNavbar">
+         <a href="#about" class="links">ABOUT</a>
+         <a href="#process" class="links">PROCESS</a>
+         <a href="#welcome-section" class="logo"><img src="img/logo/Logo.png" alt="logo"></a>
+         <a href="#work" class="links">WORK</a>
+         <a href="#contact" class="links">CONTACT</a>
+         <!-- Menu icon -->
+         <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+            <span class="material-icons">menu</span>
+         </a>
+      </nav>
+      
+      <section id="welcome-section">
+         <div class="container">
+            <img class="profile" src="img/pictures/profile_paper.jpeg" alt="profile picture">
+            <h1 class="typing"></h1>
+            <h1>I'm Gilson
+               <br>A junior frontend developer
+            </h1>
+            <p>
+               I try to create designs, based on simplicity, functionality and accessibility.
+               <br>I am open to work as a freelancer, with companies or individuals to turn ideas into reality.
+            </p>
+            <div class="social">
+               <a href="mailto:gilsondelgado97@gmail.com" target="_blank"><img src="img/social/gmail_white.png"></a>
+               <a id="profile-link" href="https://github.com/gilsonjd97" target="_blank"><img src="img/social/github_white.png"></a>
+               <a href="https://www.linkedin.com/in/gilson-delgado" target="_blank"><img src="img/social/linkedin_white.png"></a>
+               <a href="https://twitter.com/Gilsoon_97" target="_blank"><img src="img/social/twitter_white.png"></a>
+            </div>
+         </div>
+         <div class='scrolldown'>
+            <div class="arrows">
+            <div class='arrowdown'></div>
+            <div class='arrowdown'></div>
+         </div>
+      </section>
+
+      <section class="box" id="about">
+         <h1><span class="number">01</span><span class="title">WHO I AM?</span></h1>
+         <p>
+            I'm a system administration student living in Murcia, Spain. 
+            <br>Currently, I know html and css, also a little bit of javascript, php and sql and I'm working to improve that skills.
+            <br><br>I still have a lot to learn about web dev, but I always try to get the best out of every job I do.
+            <br>I love to create new projects and spend my time researching, designing and coding.
+            <br><br>Out of the work I like to play video games, go to the gym, listen to music and try to learn new interesting things.
+         </p>
+         <a href="#" target="_blank"><button>Download CV</button></a>
+      </section>
+
+      <section class="box" id="process">
+         <h1><span class="title">WORKFLOW</span><span class="number">02</span></h1>
+         <p>
+            Before an idea becomes reality, it has to make sense. I try to think about customer requirements and user needs first, the two essential ingredients for a successful project.
+            <br><br><span>First Contact</span>
+            <br>In an initial consultation, I like to set out the objectives and scope of the project, as well as the possible deadlines and budget. I also usually explain an example of how I do my job, if necessary I schedule additional meetings.
+            <br><br><span>Planning</span>
+            <br>Once the scope of the project has been approved, I draw up a possible roadmap. First, I bring all the ideas to light and put them in writing. Second, defining the possible technologies to be used. And finally taking into account the possible problems and their solutions before starting the project.
+            <br><br><span>Design, Prototype & Build</span>
+            <br>To create a good design, I need to understand its content and create a value around it. After understanding this, I start the creation process, where I create possible designs that I review with the client. When the client gives the approval, I start with the construction but without forgetting the client, giving him the opportunity to continue contributing.
+            <br><br><span>Handover, Launch and Ongoing support</span>
+            <br>Once the project is completed, all files will be delivered for operation, and if necessary I will write any help documentation. In addition you can always contact me in case any problems arise or you need help.
+         </p>
+      </section>
+
+      <section class="box" id="work">
+         <h1><span class="number">03</span><span class="title">MY PROJECTS</span></h1>
+         <p>Sometimes I design ideas that come to mind or take the opportunity to work with other people, this is my way to improve and gain experience.</p>
+         <div class="flex">
+            <a href="https://fosc.space/" target="_blank">
+            <div class="picture">
+               <h3>fosc.space</h3>
+               <img src="img/projects/fosc.png" alt="example picture">
+            </div>
+            </a>
+            <a href="https://codepen.io/gilson97/full/dyROZpw" target="_blank">
+            <div class="picture">
+               <h3>arnoldsw.com</h3>
+               <img src="img/projects/tribute.png" alt="example picture">
+            </div>
+            </a>
+         </div>
+      </section>
+
+      <section class="box" id="contact">
+         <div class="contact-text">
+            <h1>Have a new project in mind?
+               <br><span>Don't hesitate to contact me.</span> 
+            </h1>
+            <div class="contact-links">
+               <a href="mailto:gilsondelgado97@gmail.com"><button>Send me an email</button></a>
+               <div class="social">
+                  <a id="profile-link" href="https://github.com/gilsonjd97" target="_blank"><img src="img/social/github_white.png"></a>
+                  <a href="https://www.linkedin.com/in/gilson-delgado" target="_blank"><img src="img/social/linkedin_white.png"></a>
+                  <a href="https://twitter.com/Gilsoon_97" target="_blank"><img src="img/social/twitter_white.png"></a>
+               </div>
+            </div>
+         </div>
+         <p class="copy">GDR &copy; 2021</p>
+      </section>
+      
+   </body>
+   
+
+</html>
