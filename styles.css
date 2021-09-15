@@ -189,7 +189,7 @@ button:hover {
 #contact {
     height: auto;
     padding: 5rem 0;
-    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,1)), url(assets/snowMountain.webp);
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,1)), url(assets/snow.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
