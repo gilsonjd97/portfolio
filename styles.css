@@ -98,8 +98,8 @@ a {
     margin: 2rem 1.5rem;
 }
 .social img {
-    width: 2rem !important;
-    height: 2rem !important;
+    width: 2rem;
+    height: 2rem;
     margin: 0 10px;
     margin-bottom: 2rem;
 }
