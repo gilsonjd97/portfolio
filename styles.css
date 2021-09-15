@@ -2,10 +2,12 @@
 @font-face {
     font-family: Quicksand;
     src: url(assets/Quicksand.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: LemonMilk;
     src: url(assets/LEMONMILK-Regular.otf);
+    font-display: swap;
 }
 /* general things */
 * {
@@ -49,7 +51,6 @@ a {
     color: white;
 }
 .myNavbar a.logo img {
-    width: 70px;
     position: absolute;
     top: 12px;
 }
@@ -84,7 +85,6 @@ a {
     justify-content: center;
 }
 #welcome-section .profile {
-    width: 15rem;
     border-radius: 50%;
     border: 5px solid white;
     margin-top: 4.5rem;
@@ -98,7 +98,6 @@ a {
     margin: 2rem 1.5rem;
 }
 .social img {
-    width: 2rem;
     margin: 0 10px;
     margin-bottom: 2rem;
 }
@@ -182,7 +181,6 @@ button:hover {
     text-align: center;
 }
 #work .picture img {
-    width: 100%;
     border: 1px solid white;
     margin: 5px 0;
 }
@@ -197,9 +195,6 @@ button:hover {
     background-attachment: fixed;
     text-align: center;
     position: relative;
-}
-.contact-picture img {
-    width: 10rem;
 }
 .contact-text h1 {
     font-family: LemonMilk;
@@ -230,6 +225,7 @@ button:hover {
     }
     .social img {
         width: 3rem;
+	height: 3rem;
     }
 }
 @media screen and (min-width:1200px) {
@@ -245,7 +241,6 @@ button:hover {
     }
     .myNavbar a.logo img {
         position: relative;
-        width: 90px;
         top: 2px;
     }
     .myNavbar {
