@@ -38,7 +38,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
     padding: 0px 1rem;
     background-color: rgba(0,0,0,.8);
     display: flex;
@@ -96,6 +96,31 @@ a {
 }
 #welcome-section p {
     margin: 2rem 1.5rem;
+}
+.button1 {
+    background-color: rgba(0,0,0,0);
+    color: white;
+    position: relative;
+    transition: 1s;
+}
+.button1:hover {
+    background-color: royalblue;
+    transition: 1s;
+}
+.button1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 10px;
+    border-bottom: 1px solid white;
+    background-color: rgba(0,0,0,0);
+    transition: 1s;
+}
+.button1:hover::after {
+    top: 0px;
+    transition: 1s;
 }
 .social img {
     width: 2rem;
