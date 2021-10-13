@@ -102,6 +102,7 @@ a {
     color: white;
     position: relative;
     transition: 1s;
+    margin-bottom: 2rem;
 }
 .button1:hover {
     background-color: royalblue;
