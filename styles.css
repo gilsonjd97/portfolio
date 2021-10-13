@@ -52,12 +52,12 @@ a {
 }
 .myNavbar a.logo img {
     position: absolute;
-    top: 12px;
+    top: 4px;
 }
 .myNavbar a.icon {
     color: white;
     position: absolute;
-    top: 12px;
+    top: 20px;
     right: 1rem;
 }
 .myNavbar.responsive {
@@ -70,7 +70,7 @@ a {
     margin: 10px 0;
 }
 .myNavbar.responsive a:first-child {
-    margin-top: 3.5rem;
+    margin-top: 4.5rem;
 }
 /* content */
 #welcome-section {
